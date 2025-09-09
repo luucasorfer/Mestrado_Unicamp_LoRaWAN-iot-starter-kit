@@ -1,0 +1,16 @@
+site_name: LoRaWAN IoT Starter Kit
+theme:
+  name: material
+
+nav:
+  - Início: index.md
+  - Introdução: 01-introducao.md
+  - Requisitos: 02-requisitos.md
+  - Configuração: 03-configuracao-ambiente.md
+  - Montagem do Hardware: 04-montagem-hardware.md
+  - Código: 05-codigo.md
+  - Integração LoRaWAN: 06-integracao-lorawan.md
+  - Visualização dos Dados: 07-visualizacao-dados.md
+  - Testes: 08-testes.md
+  - Problemas Comuns: 09-erros-comuns.md
+  - Como Replicar: 10-replicar-projeto.md
