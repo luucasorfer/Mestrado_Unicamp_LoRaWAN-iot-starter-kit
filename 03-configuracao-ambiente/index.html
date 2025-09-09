@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configuracao-do-ambiente" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -261,6 +266,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -449,6 +456,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -464,9 +473,37 @@
 
 
 
-  <h1>Configuração</h1>
-
-
+<h1 id="configuracao-do-ambiente">Configuração do Ambiente</h1>
+<ol>
+<li>Instale o Arduino IDE</li>
+<li>Adicione a URL nas preferências:</li>
+</ol>
+<pre><code>https://dl.espressif.com/dl/package_esp32_index.json
+</code></pre>
+<ol>
+<li>
+<p>Vá em Ferramentas → Placas → Gerenciador de Placas</p>
+</li>
+<li>
+<p>Pesquise por "esp32"</p>
+</li>
+<li>
+<p>Instale o pacote da Espressif</p>
+</li>
+<li>
+<p>Instale o driver CP210x (USB-Serial):</p>
+</li>
+<li>
+<p><a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers">Baixar driver no site da Silicon Labs</a></p>
+</li>
+<li>
+<p>Instale as bibliotecas:</p>
+</li>
+<li>
+<p><code>Heltec ESP32 Dev-Boards</code></p>
+</li>
+<li><code>ESP8266 and ESP32 Oled Driver for SSD1306 (ThingPulse)</code></li>
+</ol>
 
 
 

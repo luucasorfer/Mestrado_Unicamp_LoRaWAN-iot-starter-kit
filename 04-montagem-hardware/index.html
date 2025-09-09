@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#montagem-do-hardware" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -283,6 +288,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Montagem do Hardware
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -295,6 +315,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conexoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conexões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidados-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuidados Importantes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -449,6 +506,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conexoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conexões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidados-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuidados Importantes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -464,9 +549,17 @@
 
 
 
-  <h1>Montagem do Hardware</h1>
-
-
+<h1 id="montagem-do-hardware">Montagem do Hardware</h1>
+<h2 id="conexoes">Conexões</h2>
+<p>A placa utilizada já possui display OLED e rádio LoRa integrados ao ESP32, dispensando fios externos para testes iniciais.</p>
+<h2 id="cuidados-importantes">Cuidados Importantes</h2>
+<ul>
+<li><strong>Nunca energize a placa sem a antena LoRa conectada</strong>. Isso pode danificar o rádio.</li>
+<li>Para gravar o código corretamente, os seguintes pinos devem estar:</li>
+<li>GPIO5 = LOW</li>
+<li>GPIO12 = LOW</li>
+<li>GPIO15 = HIGH</li>
+</ul>
 
 
 

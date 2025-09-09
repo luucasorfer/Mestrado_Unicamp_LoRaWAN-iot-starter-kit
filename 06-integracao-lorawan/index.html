@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#integracaomd" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -328,6 +333,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Integração LoRaWAN
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -339,6 +357,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integracaomd" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 integracao.md
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -450,6 +494,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integracaomd" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 integracao.md
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -466,7 +527,21 @@
 
   <h1>Integração LoRaWAN</h1>
 
+<hr />
+<h3 id="integracaomd">📄 <code>integracao.md</code></h3>
+<pre><code class="language-markdown"># Integração com LoRaWAN
 
+Este exemplo inicial usa **comunicação ponto-a-ponto** (peer-to-peer), sem rede LoRaWAN.
+
+Se desejar integrar com servidores como **The Things Network (TTN)**:
+
+1. Crie um aplicativo na TTN Console
+2. Registre os dispositivos (OTAA ou ABP)
+3. Adicione as bibliotecas LoRaWAN (como LMIC)
+4. Configure os parâmetros (DevEUI, AppEUI, AppKey ou DevAddr, NwkSKey, AppSKey)
+
+&gt; ⚠️ O projeto atual não usa LoRaWAN, apenas comunicação direta LoRa.
+</code></pre>
 
 
 

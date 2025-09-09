@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#codigo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -305,6 +310,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Código
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -317,6 +337,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos-inclusos-na-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos inclusos na IDE:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplos inclusos na IDE:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oled_lora_sender" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED_LoRa_Sender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled_lora_receiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED_LoRa_Receiver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequência
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -449,6 +530,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos-inclusos-na-ide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos inclusos na IDE:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplos inclusos na IDE:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oled_lora_sender" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED_LoRa_Sender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled_lora_receiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED_LoRa_Receiver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequência
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -464,9 +597,28 @@
 
 
 
-  <h1>Código</h1>
-
-
+<h1 id="codigo">Código</h1>
+<h2 id="exemplos-inclusos-na-ide">Exemplos inclusos na IDE:</h2>
+<p>Após configurar corretamente a placa na IDE do Arduino, acesse os exemplos:</p>
+<p><code>Arquivo → Exemplos → LoRa → OLED_LoRa_Sender</code><br />
+<code>Arquivo → Exemplos → LoRa → OLED_LoRa_Receiver</code></p>
+<h3 id="oled_lora_sender">OLED_LoRa_Sender</h3>
+<ul>
+<li>Envia pacotes numerados via LoRa</li>
+<li>Exibe no OLED: "Sending packet: X"</li>
+</ul>
+<h3 id="oled_lora_receiver">OLED_LoRa_Receiver</h3>
+<ul>
+<li>Recebe pacotes enviados</li>
+<li>Exibe no OLED:</li>
+<li>RSSI (intensidade do sinal)</li>
+<li>Tamanho do pacote</li>
+<li>Número total de pacotes</li>
+</ul>
+<h3 id="frequencia">Frequência</h3>
+<p>No código, ajuste a frequência de operação conforme sua placa:</p>
+<pre><code class="language-cpp">LoRa.begin(433E6);  // ou 868E6 / 915E6
+</code></pre>
 
 
 

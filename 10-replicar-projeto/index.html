@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#como-replicar-o-projeto" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -413,6 +418,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -447,6 +454,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -462,9 +471,16 @@
 
 
 
-  <h1>Como Replicar</h1>
-
-
+<h1 id="como-replicar-o-projeto">Como Replicar o Projeto</h1>
+<ol>
+<li>Adquira 2 placas ESP32 com LoRa + antenas</li>
+<li>Conecte a antena antes de ligar cada placa</li>
+<li>Instale e configure o Arduino IDE conforme descrito</li>
+<li>Carregue o exemplo <code>OLED_LoRa_Sender</code> em uma placa</li>
+<li>Carregue o exemplo <code>OLED_LoRa_Receiver</code> em outra</li>
+<li>Monitore os pacotes recebidos no display OLED ou via Serial</li>
+<li>Ajuste a frequência se necessário (433, 868 ou 915 MHz)</li>
+</ol>
 
 
 

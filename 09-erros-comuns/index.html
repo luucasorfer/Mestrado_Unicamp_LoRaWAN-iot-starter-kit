@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#problemas-comuns-e-solucoes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -393,6 +398,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -449,6 +456,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -464,9 +473,37 @@
 
 
 
-  <h1>Problemas Comuns</h1>
-
-
+<h1 id="problemas-comuns-e-solucoes">Problemas Comuns e Soluções</h1>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Placa não aparece na IDE</td>
+<td>Instale o driver CP210x corretamente</td>
+</tr>
+<tr>
+<td>Código não carrega</td>
+<td>Verifique GPIO5, GPIO12, GPIO15 e botão "EN" durante o upload</td>
+</tr>
+<tr>
+<td>Display OLED não mostra nada</td>
+<td>Confirme a instalação da biblioteca SSD1306 (ThingPulse)</td>
+</tr>
+<tr>
+<td>Comunicação falha (LoRa)</td>
+<td>Verifique se ambas placas usam a mesma frequência e antena está conectada</td>
+</tr>
+<tr>
+<td>RSSI muito fraco</td>
+<td>Aumente a distância da antena da placa e evite obstáculos metálicos</td>
+</tr>
+</tbody>
+</table>
 
 
 
