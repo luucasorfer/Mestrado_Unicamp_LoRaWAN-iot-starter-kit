@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../06-integracao-lorawan/">
+        <link rel="prev" href="../10-replicar-projeto/">
       
-      
-        <link rel="next" href="../08-testes/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Visualização dos Dados - LoRaWAN Docs</title>
+        <title>Referências - LoRaWAN Docs</title>
       
     
     
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#visualizacao-dos-dados" class="md-skip">
+        <a href="#referencias" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -98,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visualização dos Dados
+              Referências
             
           </span>
         </div>
@@ -345,19 +343,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../07-visualizacao-dados/" class="md-nav__link">
         
   
   
@@ -368,7 +357,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -443,10 +431,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../11-referencias/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Referências
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -457,6 +467,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artigos-e-blogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artigos e Blogs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliotecas-e-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliotecas e Ferramentas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentação Oficial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -481,6 +538,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artigos-e-blogs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artigos e Blogs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliotecas-e-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliotecas e Ferramentas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentação Oficial
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -495,14 +587,25 @@
 
 
 
-<h1 id="visualizacao-dos-dados">Visualização dos Dados</h1>
-<p>Durante os testes:</p>
+<h1 id="referencias">Referências</h1>
+<p>Este projeto foi desenvolvido com base em materiais de código aberto, artigos técnicos e documentação oficial. Abaixo estão as principais referências utilizadas:</p>
+<h2 id="artigos-e-blogs">Artigos e Blogs</h2>
 <ul>
-<li>Os dados são exibidos diretamente no display OLED da placa:</li>
-<li>Texto: "Sending packet: X"</li>
-<li>RSSI e tamanho do pacote recebido</li>
-<li>Você pode também usar o <strong>Serial Monitor</strong> da IDE do Arduino para depuração:</li>
-<li><code>Serial.println()</code> pode mostrar os mesmos dados visíveis no display</li>
+<li><a href="https://blog.robobuilders.com.br/como-usar-a-placa-lora-esp32-wifi-com-arduino/">Como usar a placa LoRa ESP32 WiFi com Arduino – RoboBuilders</a></li>
+<li><a href="https://github.com/phfbertoleti/Mestrado_Unicamp_LoRa_e_LoRaWAN">Mestrado na Unicamp: LoRa e LoRaWAN – Pedro Bertoleti</a></li>
+<li><a href="https://pedrobertoleti.com.br/index.php/sobre/">Site pessoal do Pedro Bertoleti</a></li>
+</ul>
+<h2 id="bibliotecas-e-ferramentas">Bibliotecas e Ferramentas</h2>
+<ul>
+<li><a href="https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series">Heltec ESP32 LoRa Library</a></li>
+<li><a href="https://github.com/espressif/arduino-esp32">ESP32 Arduino Core (Espressif)</a></li>
+<li><a href="https://github.com/ThingPulse/esp8266-oled-ssd1306">ThingPulse SSD1306 OLED Driver</a></li>
+</ul>
+<h2 id="documentacao-oficial">Documentação Oficial</h2>
+<ul>
+<li><a href="https://www.semtech.com/lora">LoRa® Technology – Semtech</a></li>
+<li><a href="https://www.arduino.cc/en/software">Arduino IDE</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">MkDocs Material</a></li>
 </ul>
 
 
